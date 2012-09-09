@@ -16,7 +16,7 @@ v = 320; % deg
 Re = 6378.1; % km
 
 % Get satellite COE:
-A0 = alt2COE(ha,hp,Re);
+A0 = Alt2COE(ha,hp,Re);
 A0(6) = degtorad(v);
 
 % Propagate COE foward:
